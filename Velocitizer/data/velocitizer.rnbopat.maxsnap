@@ -1,0 +1,22 @@
+{
+    "filetype": "C74Snapshot",
+    "version": 2,
+    "minorversion": 0,
+    "name": "velocitizer.rnbopat",
+    "origin": "velocitizer.rnbopat",
+    "type": "rnbo",
+    "subtype": "",
+    "embed": 0,
+    "snapshot": {
+        "maxRange": {
+            "value": 127.0
+        },
+        "randRange": {
+            "value": 10.0
+        },
+        "minRange": {
+            "value": 0.0
+        },
+        "__presetid": "velocitizer.rnbopat"
+    }
+}
