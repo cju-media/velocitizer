@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "rnbo",
-        "rect": [ 339.0, 323.0, 742.0, 780.0 ],
+        "rect": [ 442.0, 547.0, 742.0, 780.0 ],
         "default_fontname": "Lato",
         "title": "velocitizer.rnbopat",
         "boxes": [
@@ -25,7 +25,7 @@
                     "rnbo_extra_attributes": {
                         "hot": 0
                     },
-                    "rnbo_serial": 2,
+                    "rnbo_serial": 1,
                     "rnbo_uniqueid": "!-_obj-2",
                     "text": "!- 1."
                 }
@@ -925,7 +925,7 @@
                     "numinlets": 2,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 164.0, 73.0, 306.0, 37.0 ],
+                    "patching_rect": [ 144.0, 25.0, 306.0, 37.0 ],
                     "rnbo_classname": "param",
                     "rnbo_extra_attributes": {
                         "fromnormalized": "",

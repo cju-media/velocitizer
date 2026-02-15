@@ -14,13 +14,36 @@
             {
                 "box": {
                     "format": 6,
+                    "id": "obj-17",
+                    "maxclass": "flonum",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 466.0, 222.0, 50.0, 22.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-15",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 442.0, 254.0, 80.0, 22.0 ],
+                    "text": "minRange $1"
+                }
+            },
+            {
+                "box": {
+                    "format": 6,
                     "id": "obj-13",
                     "maxclass": "flonum",
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 284.0, 142.0, 50.0, 22.0 ]
+                    "patching_rect": [ 284.0, 164.0, 50.0, 22.0 ]
                 }
             },
             {
@@ -42,7 +65,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 236.0, 336.0, 50.0, 22.0 ],
-                    "text": "79 0"
+                    "text": "91 3"
                 }
             },
             {
@@ -150,7 +173,7 @@
                     "numinlets": 1,
                     "numoutlets": 8,
                     "outlettype": [ "", "", "", "int", "int", "", "int", "" ],
-                    "patching_rect": [ 267.0, 295.0, 92.5, 22.0 ],
+                    "patching_rect": [ 284.0, 277.0, 92.5, 22.0 ],
                     "text": "midiparse"
                 }
             },
@@ -328,10 +351,10 @@
                                 "value": 127.0
                             },
                             "randRange": {
-                                "value": 10.0
+                                "value": 100.0
                             },
                             "minRange": {
-                                "value": 0.0
+                                "value": 2.0
                             },
                             "__presetid": "velocitizer.rnbopat"
                         },
@@ -352,10 +375,10 @@
                                             "value": 127.0
                                         },
                                         "randRange": {
-                                            "value": 10.0
+                                            "value": 100.0
                                         },
                                         "minRange": {
-                                            "value": 0.0
+                                            "value": 2.0
                                         },
                                         "__presetid": "velocitizer.rnbopat"
                                     },
@@ -396,6 +419,18 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-1", 0 ],
+                    "source": [ "obj-15", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-15", 0 ],
+                    "source": [ "obj-17", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-1", 1 ],
                     "source": [ "obj-4", 0 ]
                 }
@@ -429,6 +464,14 @@
             "obj-1": [ "rnbo~", "rnbo~", 0 ],
             "obj-2": [ "vst~", "vst~", 0 ],
             "obj-6": [ "vst~[1]", "vst~", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0

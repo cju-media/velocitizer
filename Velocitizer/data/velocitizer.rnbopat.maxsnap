@@ -12,10 +12,10 @@
             "value": 127.0
         },
         "randRange": {
-            "value": 10.0
+            "value": 100.0
         },
         "minRange": {
-            "value": 0.0
+            "value": 2.0
         },
         "__presetid": "velocitizer.rnbopat"
     }
